@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-03-04T13:00:18.525Z",
+    "end": "2024-03-04T13:00:31.553Z",
+    "duration": 13028,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "35092d11-3499-4f34-a6ef-88f3038a28d3",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests_pom\\testPomElements_textBox.cy.js",
+      "file": "cypress\\e2e\\tests_pom\\testPomElements_textBox.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a205a138-4192-44b4-bf2f-b35dc4b7bd73",
+          "title": "Elements -> Textbox",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "fill textbox",
+              "fullTitle": "Elements -> Textbox fill textbox",
+              "timedOut": null,
+              "duration": 9407,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePage.gotoElementsPage().clickGetTexBox().fillUserName(_variables.default.formData.firstName).fillUserEmail(_variables.default.formData.email).fillCurrentAddress(_variables.default.formData.currentAddress).fillPermanentAddress(_variables.default.formData.permanentAddress).clickSubmitForm().getOutput().should(\"contain\", `Name:${_variables.default.formData.firstName}Email:${_variables.default.formData.email}Current Address :${_variables.default.formData.currentAddress}`);",
+              "err": {},
+              "uuid": "3e06f1ae-3b37-4e06-af3f-9606c8670c8c",
+              "parentUUID": "a205a138-4192-44b4-bf2f-b35dc4b7bd73",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3e06f1ae-3b37-4e06-af3f-9606c8670c8c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9407,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

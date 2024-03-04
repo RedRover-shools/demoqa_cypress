@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-03-04T13:00:36.359Z",
+    "end": "2024-03-04T13:00:53.600Z",
+    "duration": 17241,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a007cd75-7506-41bd-8996-e09277acae5d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\tests_pom\\testPomElements_webTables.cy.js",
+      "file": "cypress\\e2e\\tests_pom\\testPomElements_webTables.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d077bf8b-67d4-4c04-b596-956b1def0e9e",
+          "title": "Elements -> Web Tables",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "add user, search user, delete user",
+              "fullTitle": "Elements -> Web Tables add user, search user, delete user",
+              "timedOut": null,
+              "duration": 12813,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePage.gotoElementsPage().clickWebTables().clickAddNewRecord().enterFirstName(_variables.default.formData.firstName).enterLastName(_variables.default.formData.lastName).enterEmail(_variables.default.formData.email).enterAge(_variables.default.formData.age).enterSalary(_variables.default.formData.salary).enterDepartment(_variables.default.formData.department).enterSubmit().enterSearchBox(_variables.default.formData.email).searchRowUser(_variables.default.formData.email).clickGetDeleteButton().getAllUser().should('have.value', '');",
+              "err": {},
+              "uuid": "e45ad62f-9284-4e02-8099-226e8cd723bd",
+              "parentUUID": "d077bf8b-67d4-4c04-b596-956b1def0e9e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e45ad62f-9284-4e02-8099-226e8cd723bd"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12813,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

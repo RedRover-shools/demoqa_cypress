@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 2,
+    "failures": -1,
+    "start": "2024-03-04T12:59:55.740Z",
+    "end": "2024-03-04T13:00:04.289Z",
+    "duration": 8549,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 66.66666666666666,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0c717a09-2dc6-4588-ad35-c5940a1ca261",
+      "title": "",
+      "fullFile": "cypress\\e2e\\api\\getApiLogin.cy.js",
+      "file": "cypress\\e2e\\api\\getApiLogin.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2d977f7f-6437-4448-99dc-4e87e970ab9b",
+          "title": "Test suit Authorisation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "post authorised",
+              "fullTitle": "Test suit Authorisation post authorised",
+              "timedOut": null,
+              "duration": 4865,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: \"POST\",\n  url: `${BASE_URL}/Account/v1/Authorized`,\n  headers: {},\n  body: {\n    userName: nameOfUser,\n    password: userPassword\n  }\n}).then(responce => {\n  expect(responce.status).to.be.eql(200);\n  expect(responce.statusText).to.be.eql(\"OK\");\n  token = responce.body.token;\n});",
+              "err": {},
+              "uuid": "7c24f05b-18db-4672-9814-efb7eb907abe",
+              "parentUUID": "2d977f7f-6437-4448-99dc-4e87e970ab9b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "post token authorised",
+              "fullTitle": "Test suit Authorisation post token authorised",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "cy.request({\n  method: \"POST\",\n  url: 'https://demoqa.com/Account/v1/GenerateToken',\n  body: {\n    userName: nameOfUser,\n    password: userPassword\n  }\n}).then(response => {\n  expect(response.status).to.be.eql(200);\n  token = response.body.token;\n  expires = response.body.expires;\n  console.log({\n    token,\n    expires\n  });\n});",
+              "err": {},
+              "uuid": "f2f20af4-abc2-4aff-923d-ff7671c8f47c",
+              "parentUUID": "2d977f7f-6437-4448-99dc-4e87e970ab9b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "books",
+              "fullTitle": "Test suit Authorisation books",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "cy.setCookie('userName', nameOfUser);\ncy.setCookie('token', token);\ncy.setCookie(\"expires\", expires);\ncy.visit('https://demoqa.com/books');",
+              "err": {},
+              "uuid": "6e0f0c5e-b1b9-4acf-938a-275c54c01fd7",
+              "parentUUID": "2d977f7f-6437-4448-99dc-4e87e970ab9b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7c24f05b-18db-4672-9814-efb7eb907abe"
+          ],
+          "failures": [],
+          "pending": [
+            "f2f20af4-abc2-4aff-923d-ff7671c8f47c",
+            "6e0f0c5e-b1b9-4acf-938a-275c54c01fd7"
+          ],
+          "skipped": [],
+          "duration": 4865,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
