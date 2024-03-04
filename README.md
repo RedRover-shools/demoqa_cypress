@@ -1,2 +1,21 @@
-# demoqa_cypress
-Project created for using cypress to e2e testing [Demoqa](https://demoqa.com/)
+# CypressDemoqa
+## Project created for training using cypress to e2e testing [Demoqa](https://demoqa.com/)
+
+[The site has:](https://demoqa.com/)
+* elements
+* forms
+* allerts, frame & windows
+* widgets
+* interactions
+* book store application
+
+It is usefull for junior automation tester.
+
+Steps to use fraimwork:
+1. Clone repository.
+2. Open project in VScode.
+3. Run in terminale code : `npm i `.
+4. Run in terminale code : `npx cypress run`.
+5. Run in terminale code : `npm cypress open`.
+
+PS. Please not use it is  code for commercial aims.

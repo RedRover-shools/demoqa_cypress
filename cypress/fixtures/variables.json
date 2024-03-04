@@ -1,0 +1,18 @@
+{
+    "formData": {
+        "firstName": "Roman",
+        "lastName": "Rajewski",
+        "email": "wery@wp.pl",
+        "phone": 2143112,
+        "currentAddress":"EU",
+        "permanentAddress":"EU-Poland",
+        "age": 34,
+        "department": "QA Automation",
+        "salary" : 5000
+    },
+    "URL": {
+        "site": "https://demoqa.com"
+    }
+
+}
+

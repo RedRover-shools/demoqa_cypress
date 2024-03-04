@@ -1,0 +1,28 @@
+{
+  "name": "cypressdemoqa",
+  "version": "1.0.0",
+  "description": "Project created for training using cypress to e2e testing [Demoqa](https://demoqa.com/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open",
+    "prescript" : "npx cypress run  --browser chrome",
+    "script" : "npx cypress run  --browser electron",
+    "postscript" : "npx cypress run  --browser firefox"
+  },
+ 
+  "keywords": [],
+  "author": "RedRover.schoolos_group_qa_autoforce",
+  "license": "ISC",
+
+  "homepage": "https://github.com/RedRover-shools/demoqa_cypress.git",
+  "devDependencies": {
+    "@cypress/grep": "^4.0.1",
+    "cypress": "^13.6.1",
+    "cypress-mochawesome-reporter": "^3.7.0",
+    "cypress-xpath": "^2.0.1"
+  },
+  "dependencies": {
+    "cypress-file-upload": "^5.0.8",
+    "cypress-plugin-api": "^2.11.1"
+  }
+}
