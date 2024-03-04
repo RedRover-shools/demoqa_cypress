@@ -1,5 +1,5 @@
 # CypressDemoqa
-## Project created for training using cypress to e2e testing [Demoqa](https://demoqa.com/)
+## A project was created for training purposes using Cypress for end-to-end testing [Demoqa](https://demoqa.com/)
 
 [The site has:](https://demoqa.com/)
 * elements
@@ -17,5 +17,6 @@ Steps to use fraimwork:
 3. Run in terminale code : `npm i `.
 4. Run in terminale code : `npx cypress run`.
 5. Run in terminale code : `npm cypress open`.
+
 
 PS. Please not use it is  code for commercial aims.

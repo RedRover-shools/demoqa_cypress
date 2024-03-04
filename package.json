@@ -10,7 +10,7 @@
     "postscript" : "npx cypress run  --browser firefox"
   },
  
-  "keywords": [],
+  "keywords": ["Cypress, Automation, RedRover.shools"],
   "author": "RedRover.schoolos_group_qa_autoforce",
   "license": "ISC",
 
