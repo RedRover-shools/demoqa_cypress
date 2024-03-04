@@ -11,7 +11,7 @@
 
 It is usefull for junior automation tester.
 
-Steps to use fraimwork:
+Steps to use framework:
 1. Clone repository.
 2. Open project in VScode.
 3. Run in terminale code : `npm i `.
